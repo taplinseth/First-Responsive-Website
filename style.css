@@ -1,0 +1,129 @@
+@media (max-width: 576px) {
+    body {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+                "header"
+                "a"
+                "b"
+                "c";
+    }
+
+    header {
+        grid-area: header;
+        background-color: rgb(69, 177, 212);
+        text-align: center;
+        height: 300px;
+    }
+
+    main {
+        width: 33%;
+        margin-left: 33%;
+        margin-right: 33%;
+        margin-top: -275px;
+    }
+
+    .pageHeader h1 {
+        color: white;
+        margin-top: 150px;
+    }
+
+    .title1 {
+        grid-area: a;
+        text-align: center;
+        border-top: 25px solid rgb(69, 177, 212);
+    }
+
+    .title2 {
+        grid-area: b;
+        text-align: center;
+        margin-top: 10px;
+        border-top: 25px solid rgb(233, 104, 18);
+    }
+
+    .title3 {
+        grid-area: c;
+        text-align: center;
+        margin-top: 10px;
+        border-top: 25px solid rgb(88, 219, 197);
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                "header";
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "a b c";
+    }
+
+    header {
+        grid-area: header;
+        background-color: #2BCEC0;
+        color: white;
+        height: 300px;
+    }
+
+    .pageHeader h1 {
+        margin-top: 135px;
+        text-align: center;
+    }
+
+    .title1 {
+        grid-area: a;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+        border-top: 25px solid #45B1D4FF;
+        width: 75%;
+        margin-left: 35px;
+    }
+
+    .title2 {
+        grid-area: b;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+        border-top: 25px solid #E96812FF;
+        width: 75%;
+        margin-left: 35px;
+    }
+
+    .title3 {
+        grid-area: c;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+        border-top: 25px solid rgb(88, 219, 197);
+        width: 75%;
+        margin-left: 30px;
+    }
+
+    .blackBox1{
+        background-color: #1B1B1B;
+        height: 300px;
+        margin-top: -227px;
+        width: 100%;
+    }
+
+    .blackBox2{
+        background-color: #1B1B1B;
+        height: 300px;
+        margin-top: -227px;
+        width: 100%;
+    }
+
+    .blackBox3{
+        background-color: #1B1B1B;
+        height: 300px;
+        margin-top: -227px;
+        width: 100%;
+    }
+}
